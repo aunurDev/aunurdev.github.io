@@ -216,15 +216,15 @@ File: Chartist Chart
         labels: [2015, 2016, 2017, 2018, 2019, 2020],
         series: [
           {
-            name: 'TKS',
+            name: 'TKJ',
             data: [500, 600, 700, 800, 900, 1000]
           },
           {
-            name: 'RATK',
+            name: 'APK',
             data: [10, 1100, 1200, 1300, 1400, 1500]
           },
           {
-            name: 'APK',
+            name: 'RPL',
             data: [1500, 1400, 1300, 1000, 500, 200]
           }
         ]
