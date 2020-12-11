@@ -2517,7 +2517,7 @@ div.dt-button-info {
   width: 100%; }
   .dokumen__komponen {
     width: 200px;
-    height: 200px;
+    height: 180px;
     font-size: 16; }
     .dokumen__komponen span {
       top: 5%;
@@ -2531,7 +2531,7 @@ div.dt-button-info {
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
-      width: 100%; }
+      width: 90%; }
 
 .button-list {
   margin-left: -8px;
