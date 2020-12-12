@@ -2485,22 +2485,34 @@ div.dt-button-info {
   top: 40px; }
 
 .hero {
+  position: relative;
+  height: 500px;
   border-radius: 5px; }
   @media (max-width: 768px) {
-    .hero .hero-contact, .hero i {
-      display: block !important; }
-      .hero .hero-contact p, .hero i p {
-        line-height: 25px;
-        margin: 10px 0; } }
+    .hero {
+      height: 550px; } }
+  .hero p {
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+    @media (max-width: 768px) {
+      .hero p {
+        top: 20%; } }
+    .hero p span {
+      font-size: 40px; }
+  .hero .hero-dashboard-img {
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+    right: 0; }
 
 .box-data {
   margin-top: -80px;
   padding: 20px;
   width: 100%;
   z-index: 2; }
-
-.bg-green {
-  background-color: #27ae60; }
 
 .bg-card {
   -webkit-clip-path: polygon(0 0, 100% 0, 66% 100%, 0% 100%);

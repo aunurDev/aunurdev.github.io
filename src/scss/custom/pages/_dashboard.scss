@@ -5,15 +5,29 @@
 
 //hero
 .hero{
+    position: relative;
+    height: 500px;
     border-radius: 5px;
-    .hero-contact, i{
+    @media(max-width:768px){
+        height: 550px;
+    }
+    p{
+        position: absolute;
+        left: 10%;
+        top: 40%;
+        transform: translateY(-50%);
         @media(max-width:768px){
-            display: block !important;
-            p{
-                line-height: 25px;
-                margin: 10px 0;
-            }
+            top: 20%;
         }
+        span{
+            font-size: 40px;
+        }
+    }
+    .hero-dashboard-img{
+        height: 400px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 }
 .box-data{
@@ -21,9 +35,6 @@
     padding: 20px;
     width: 100%;
     z-index: 2;
-}
-.bg-green{
-    background-color: #27ae60;
 }
 .bg-card{
     clip-path: polygon(0 0, 100% 0, 66% 100%, 0% 100%);
