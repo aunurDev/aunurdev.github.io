@@ -673,6 +673,44 @@ Responsive Menu
 body.boxed-layout .container-fluid {
   max-width: 1300px; }
 
+.hero {
+  position: relative;
+  height: 400px;
+  border-radius: 5px; }
+  @media (max-width: 768px) {
+    .hero {
+      height: 550px; } }
+  .hero p {
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+    @media (max-width: 768px) {
+      .hero p {
+        top: 30%;
+        font-size: 40px !important; } }
+    .hero p .sub-1 {
+      font-size: 30px; }
+    .hero p .sub-2 {
+      font-size: 18px; }
+  .hero .hero-dashboard-img {
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: -5%; }
+    @media (max-width: 768px) {
+      .hero .hero-dashboard-img {
+        height: 50%; } }
+  .hero .hero-img-master {
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: -2%; }
+    @media (max-width: 768px) {
+      .hero .hero-img-master {
+        height: 50%; } }
+
 .grey-100 {
   color: #f1f5f7; }
 
@@ -2758,30 +2796,6 @@ div.dt-button-info {
 
 .jqvmap-zoomout {
   top: 40px; }
-
-.hero {
-  position: relative;
-  height: 500px;
-  border-radius: 5px; }
-  @media (max-width: 768px) {
-    .hero {
-      height: 550px; } }
-  .hero p {
-    position: absolute;
-    left: 10%;
-    top: 40%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
-    @media (max-width: 768px) {
-      .hero p {
-        top: 20%; } }
-    .hero p span {
-      font-size: 40px; }
-  .hero .hero-dashboard-img {
-    height: 400px;
-    position: absolute;
-    bottom: 0;
-    right: 0; }
 
 .box-data {
   margin-top: -80px;

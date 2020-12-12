@@ -8694,6 +8694,34 @@ a.text-purple:hover, a.text-purple:focus {
   color: #98a6ad;
   font-size: 14px; }
 
+.card-master {
+  height: 150px;
+  width: 340px;
+  -webkit-transition: .25s;
+  transition: .25s;
+  -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12); }
+  @media (max-width: 768px) {
+    .card-master {
+      width: 300px; } }
+  .card-master:hover {
+    -webkit-box-shadow: 0 2.8px 2.2px rgba(67, 212, 244, 0.034), 0 6.7px 5.3px rgba(67, 212, 244, 0.048), 0 12.5px 10px rgba(67, 212, 244, 0.06), 0 22.3px 17.9px rgba(67, 212, 244, 0.072), 0 41.8px 33.4px rgba(67, 212, 244, 0.086);
+            box-shadow: 0 2.8px 2.2px rgba(67, 212, 244, 0.034), 0 6.7px 5.3px rgba(67, 212, 244, 0.048), 0 12.5px 10px rgba(67, 212, 244, 0.06), 0 22.3px 17.9px rgba(67, 212, 244, 0.072), 0 41.8px 33.4px rgba(67, 212, 244, 0.086); }
+  .card-master .card-master-img {
+    left: 0;
+    width: 40%;
+    bottom: 10%; }
+  .card-master p {
+    width: 60%; }
+    .card-master p.p-title {
+      top: 15%;
+      right: 10%;
+      font-size: 40px; }
+    .card-master p.p-nomor {
+      right: 0;
+      bottom: 0;
+      font-size: 50px; }
+
 .dropdown-menu {
   -webkit-box-shadow: 0 3px 8px 0 rgba(154, 161, 171, 0.2);
           box-shadow: 0 3px 8px 0 rgba(154, 161, 171, 0.2);
