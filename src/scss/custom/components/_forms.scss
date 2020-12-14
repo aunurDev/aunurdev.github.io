@@ -45,3 +45,34 @@ input {
         outline: none;
     }
 }
+
+.box-input-form{
+    width: 50%;
+    border: none;
+    left: 10%;
+    height: 20%;
+    bottom: 15%;
+    @media(max-width:768px){
+        bottom: 35%;
+        input,select,button{
+            margin-top: 10px;
+            width: 100%;
+        }
+    }
+    select{
+        -webkit-appearance: none;
+    }
+    button{
+        padding: 8px 12px;
+        transition: .25s;
+        &:hover{
+            box-shadow: $box-shadow-light;
+        }
+    }
+}
+
+// row select form
+.row-select{
+    top: 25%;
+    right: 8%;
+}

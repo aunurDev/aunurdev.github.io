@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>SIAKAD SMKI</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- Chartist Chart CSS -->
+        <link rel="stylesheet" href="assets/libs/chartist/chartist.min.css">
+
+        <!-- jvectormap -->
+        <link href="assets/libs/jqvmap/jqvmap.min.css" rel="stylesheet" />
+
+        <!-- DataTables -->
+        <link href="assets/libs/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/libs/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css"/>        
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body class="unsticky-header">
+
+        <!-- Navigation Bar-->
+        <header id="topnav">
+
+            @@include('./partials/topbar.html')
+
+            @@include('./partials/horizontal-nav.html')
+
+        </header>
+        <!-- End Navigation Bar-->
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="wrapper">
+            <div class="container-fluid">
+
+                <!-- start page title -->
+                <div class="page-title-alt-bg"></div>
+                <div class="page-title-box">
+                    <div class="page-title-right">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item"><a href="javascript: void(0);">Master</a></li>
+                            <li class="breadcrumb-item active">Tahun akademik</li>
+                        </ol>
+                    </div>
+                    <h4 class="page-title">Data master tahun akademik</h4>
+                </div> 
+                <!-- end page title -->
+
+                <!-- start content -->
+                <div class="deep-space pt-4 pl-4 hero">
+                    <p class="text-left grey-300 display-4">TAHUN AKADEMIK 
+                        <span class="sub-1 d-block py-1">DATA MASTER</span>
+                        <span class="sub-2 d-block font-weight-lighter text-white-50 pt-3 mb-3">Hai Aunur!.. Mari persiapkan tahun pelajaran baru</span>
+                    </p>
+                    <img class="hero-img-master" src="assets/images/hero/master.png" height="270px" alt="">
+                    <div class="box-input-form position-absolute">
+                        <div class="row p-0">
+                            <div class="col-md-5 col-sm-12 p-1">
+                                <!-- <input type="text" class="form-control" placeholder="2020/2021"> -->
+                                <input type="text" class="form-control" placeholder="2020/2021" data-toggle="input-mask" data-mask-format="0000/0000">
+                            </div>
+                            <div class="col-md-5 col-sm-12 p-1 position-relative">
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option disabled selected>PILIH SEMESTER</option>
+                                        <option>GANJIL</option>
+                                        <option>GENAP</option>
+                                    </select>
+                                </div>
+                                <span class="position-absolute row-select"><i class="icon-arrow-down"></i></span>
+                            </div>
+                            <div class="col-md-2 col-sm-12 p-1">
+                                <button class="btn btn-md btn-outline-light">INSERT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--end hero-->
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card-box">
+                            <h4 class="header-title mt-4">Daftar master tahun akademik</h4>
+                            <p class="sub-header">
+                                Master tahun akademik sebagai sebagai bahan untuk acuan pengelolaan data lain berdasarkan tahun akademik dan semester yang sedang aktif saat ini.
+                            </p>
+
+                            <table id="datatable" class="table table-bordered dt-responsive nowrap">
+                                <thead>
+                                <tr>
+                                    <th>No.</th>
+                                    <th>Tahun akademik</th>
+                                    <th>semester</th>
+                                    <th>Status</th>
+                                    <th>Aksi</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2020/2021</td>
+                                    <td>Genap</td>
+                                    <td>Aktif</td>
+                                    <!-- <td>aktif</td> -->
+                                    <td>
+                                        <button class="btn btn-secondary width-md box-shadow-dark"><i class="icon-wrench"></i> Ubah</button>
+                                        <button class="btn btn-dark width-md box-shadow-dark"><i class="icon-trash"></i> Arsipkan</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>2020/2021</td>
+                                    <td>Ganjil</td>
+                                    <td>Aktif</td>
+                                    <!-- <td>aktif</td> -->
+                                    <td>
+                                        <button class="btn btn-secondary width-md box-shadow-dark"><i class="icon-wrench"></i> Ubah</button>
+                                        <button class="btn btn-dark width-md box-shadow-dark"><i class="icon-trash"></i> Arsipkan</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>2019/2020</td>
+                                    <td>Genab</td>
+                                    <td>Aktif</td>
+                                    <!-- <td>aktif</td> -->
+                                    <td>
+                                        <button class="btn btn-secondary width-md box-shadow-dark"><i class="icon-wrench"></i> Ubah</button>
+                                        <button class="btn btn-dark width-md box-shadow-dark"><i class="icon-trash"></i> Arsipkan</button>
+                                    </td>
+                                </tr>
+                                
+                                </tbody>
+                            </table>
+                        </div> <!-- end card-box -->
+                    </div> <!-- end col -->
+                </div> <!-- end row -->
+
+                <!-- end content -->
+
+            </div> <!-- end container -->
+        </div>  
+        <!-- end wrapper -->
+
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+
+        @@include('./partials/footer.html')
+
+        @@include('./partials/right-sidebar.html')
+        
+
+        <!-- Vendor js -->
+        <script src="assets/js/vendor.min.js"></script>
+
+        <!-- select2 js -->
+        <script src="assets/libs/select2/select2.min.js"></script>
+        <script src="assets/libs/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+        <script src="assets/libs/switchery/switchery.min.js"></script>
+        <script src="assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+        <!-- Mask input -->
+        <script src="assets/libs/jquery-mask-plugin/jquery.mask.min.js"></script>
+        <!-- Bootstrap Select -->
+        <script src="assets/libs/bootstrap-select/bootstrap-select.min.js"></script>
+
+        <script src="assets/libs/moment/moment.min.js"></script>
+        <script src="assets/libs/bootstrap-timepicker/bootstrap-timepicker.min.js"></script>
+
+        <script src="assets/libs/bootstrap-colorpicker/bootstrap-colorpicker.min.js"></script>
+
+        <script src="assets/libs/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+
+        <script src="assets/libs/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+        <!-- datatable js -->
+        <script src="assets/libs/datatables/jquery.dataTables.min.js"></script>
+        <script src="assets/libs/datatables/dataTables.bootstrap4.min.js"></script>
+        <script src="assets/libs/datatables/dataTables.responsive.min.js"></script>
+        <script src="assets/libs/datatables/responsive.bootstrap4.min.js"></script>
+        
+        <script src="assets/libs/datatables/dataTables.buttons.min.js"></script>
+        <script src="assets/libs/datatables/buttons.bootstrap4.min.js"></script>
+        <script src="assets/libs/datatables/buttons.html5.min.js"></script>
+        <script src="assets/libs/datatables/buttons.flash.min.js"></script>
+        <script src="assets/libs/datatables/buttons.print.min.js"></script>
+
+        <script src="assets/libs/datatables/dataTables.keyTable.min.js"></script>
+        <script src="assets/libs/datatables/dataTables.select.min.js"></script>
+
+        <!-- Datatables init -->
+        <script src="assets/js/pages/datatables.init.js"></script> 
+        
+        <!-- Init js-->
+        <script src="assets/js/pages/form-advanced.init.js"></script>        
+
+        <!-- App js -->
+        <script src="assets/js/app.min.js"></script>
+    </body>
+</html>
+
+
+
+
+
