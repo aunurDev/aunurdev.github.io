@@ -52,36 +52,30 @@
                     <div class="page-title-right">
                         <ol class="breadcrumb m-0">
                             <li class="breadcrumb-item"><a href="javascript: void(0);">Master</a></li>
-                            <li class="breadcrumb-item active">Tahun akademik</li>
+                            <li class="breadcrumb-item active">Laboratorium</li>
                         </ol>
                     </div>
-                    <h4 class="page-title">Data master tahun akademik</h4>
+                    <h4 class="page-title">Data master laboratorium</h4>
                 </div> 
                 <!-- end page title -->
 
                 <!-- start content -->
                 <div class="deep-space pt-4 pl-4 hero">
-                    <p class="text-left grey-300 display-4">TAHUN AKADEMIK 
+                    <p class="text-left grey-300 display-4">LABORATORIUM 
                         <span class="sub-1 d-block py-1">DATA MASTER</span>
-                        <span class="sub-2 d-block font-weight-lighter text-white-50 pt-2 mb-4">Hai Aunur!.. Mari persiapkan tahun pelajaran baru</span>
+                        <span class="sub-2 d-block font-weight-lighter text-white-50 pt-3 mb-3">Hai Aunur!.. Mari persiapkan laboratorium baru. 
+                            <br p-0 m-0> Nama awalan tidak perlu laboratorium ya..</span>
                     </p>
                     <img class="hero-img-master" src="assets/images/hero/master.png" height="270px" alt="">
                     <div class="box-input-form position-absolute">
                         <div class="row p-0">
                             <div class="col-md-5 col-sm-12 p-1">
-                                <label for="tahun-akademik" class="grey-500">Tahun akademik</label>
-                                <input name="tahun-akademik" type="text" class="form-control" placeholder="2020/2021" data-toggle="input-mask" data-mask-format="0000/0000">
+                                <label for="nama-lab" class="grey-500">Nama laboratorium</label>
+                                <input name="nama-lab" type="text" class="form-control" placeholder="Bahasa">
                             </div>
-                            <div class="col-md-5 col-sm-12 p-1 position-relative">
-                                <div class="form-group">
-                                    <label for="semester" class="grey-500">Semester</label>
-                                    <select name="semester" class="form-control">
-                                        <option disabled selected>PILIH SEMESTER</option>
-                                        <option>GANJIL</option>
-                                        <option>GENAP</option>
-                                    </select>
-                                </div>
-                                <span class="position-absolute row-select"><i class="icon-arrow-down"></i></span>
+                            <div class="col-md-5 col-sm-12 p-1">
+                                <label for="kapasitas-lab" class="grey-500">Kapasitas orang</label>
+                                <input name="kapasitas-lab" type="number" class="form-control" placeholder="35">
                             </div>
                             <div class="col-md-2 col-sm-12 p-1">
                                 <button class="btn btn-md btn-outline-light">INSERT</button>
@@ -93,30 +87,25 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="card-box">
-                            <h4 class="header-title mt-4">Daftar master tahun akademik</h4>
+                            <h4 class="header-title mt-4">Daftar master laboratorium</h4>
                             <p class="sub-header">
-                                Master tahun akademik sebagai bahan untuk acuan pengelolaaan data lain berdasarkan tahun akademik dan semester yang sedang aktif saat ini. <br class="p-0 m-0">
-                                Anda dapat mengaktifkan tahun akademik untuk melihat data jadwal, struktur dan data lain yang terkait dengan tahun akademik yang aktif. Bukan hanya itu.. <br class="p-0 m-0">
-                                Catatan "jika memulai semester baru, maka buatlah tahun akademik lagi dengan semester yang baru!" data yang baru saja di masukkan akan otomatis aktif.
+                                Master laboratorium sebagai sebagai bahan acuan untuk opsi jabatan struktur fungsional kepala laboratorium serta pengelolaan sarana dan prasarana laboratorium.
                             </p>
 
                             <table id="datatable" class="table table-bordered dt-responsive nowrap">
                                 <thead>
                                 <tr>
                                     <th>No.</th>
-                                    <th>Tahun akademik</th>
-                                    <th>semester</th>
-                                    <th>Status</th>
+                                    <th>Nama laboratorium</th>
+                                    <th>Kapasitas orang</th>
                                     <th>Aksi</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>2020/2021</td>
-                                    <td>Genap</td>
-                                    <td>Aktif</td>
-                                    <!-- <td>aktif</td> -->
+                                    <td>Laboratorium bahasa</td>
+                                    <td>38</td>
                                     <td>
                                         <button class="btn btn-secondary width-md box-shadow-dark"><i class="icon-wrench"></i> Ubah</button>
                                         <button class="btn btn-dark width-md box-shadow-dark"><i class="icon-trash"></i> Arsipkan</button>
@@ -124,10 +113,8 @@
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>2020/2021</td>
-                                    <td>Ganjil</td>
-                                    <td>Aktif</td>
-                                    <!-- <td>aktif</td> -->
+                                    <td>Laboratorium komputer</td>
+                                    <td>34</td>
                                     <td>
                                         <button class="btn btn-secondary width-md box-shadow-dark"><i class="icon-wrench"></i> Ubah</button>
                                         <button class="btn btn-dark width-md box-shadow-dark"><i class="icon-trash"></i> Arsipkan</button>
@@ -135,10 +122,8 @@
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>2019/2020</td>
-                                    <td>Genab</td>
-                                    <td>Aktif</td>
-                                    <!-- <td>aktif</td> -->
+                                    <td>Laboratorium IPA</td>
+                                    <td>35</td>
                                     <td>
                                         <button class="btn btn-secondary width-md box-shadow-dark"><i class="icon-wrench"></i> Ubah</button>
                                         <button class="btn btn-dark width-md box-shadow-dark"><i class="icon-trash"></i> Arsipkan</button>

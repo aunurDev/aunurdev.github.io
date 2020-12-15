@@ -52,36 +52,29 @@
                     <div class="page-title-right">
                         <ol class="breadcrumb m-0">
                             <li class="breadcrumb-item"><a href="javascript: void(0);">Master</a></li>
-                            <li class="breadcrumb-item active">Tahun akademik</li>
+                            <li class="breadcrumb-item active">Jurusan</li>
                         </ol>
                     </div>
-                    <h4 class="page-title">Data master tahun akademik</h4>
+                    <h4 class="page-title">Data master jurusan</h4>
                 </div> 
                 <!-- end page title -->
 
                 <!-- start content -->
                 <div class="deep-space pt-4 pl-4 hero">
-                    <p class="text-left grey-300 display-4">TAHUN AKADEMIK 
+                    <p class="text-left grey-300 display-4">JURUSAN
                         <span class="sub-1 d-block py-1">DATA MASTER</span>
-                        <span class="sub-2 d-block font-weight-lighter text-white-50 pt-2 mb-4">Hai Aunur!.. Mari persiapkan tahun pelajaran baru</span>
+                        <span class="sub-2 d-block font-weight-lighter text-white-50 pt-2 mb-4">Hai Aunur!.. Mari persiapkan jurusan baru</span>
                     </p>
                     <img class="hero-img-master" src="assets/images/hero/master.png" height="270px" alt="">
                     <div class="box-input-form position-absolute">
                         <div class="row p-0">
                             <div class="col-md-5 col-sm-12 p-1">
-                                <label for="tahun-akademik" class="grey-500">Tahun akademik</label>
-                                <input name="tahun-akademik" type="text" class="form-control" placeholder="2020/2021" data-toggle="input-mask" data-mask-format="0000/0000">
+                                <label for="kode-jurusan" class="grey-500">Kode jurusan</label>
+                                <input name="kode-jurusan" type="text" class="form-control" placeholder="TKJ">
                             </div>
-                            <div class="col-md-5 col-sm-12 p-1 position-relative">
-                                <div class="form-group">
-                                    <label for="semester" class="grey-500">Semester</label>
-                                    <select name="semester" class="form-control">
-                                        <option disabled selected>PILIH SEMESTER</option>
-                                        <option>GANJIL</option>
-                                        <option>GENAP</option>
-                                    </select>
-                                </div>
-                                <span class="position-absolute row-select"><i class="icon-arrow-down"></i></span>
+                            <div class="col-md-5 col-sm-12 p-1">
+                                <label for="nama-jurusan" class="grey-500">Nama jurusan</label>
+                                <input name="nama-jurusan" type="text" class="form-control" placeholder="TEKNIK KOMPUTER DAN JARINGAN">
                             </div>
                             <div class="col-md-2 col-sm-12 p-1">
                                 <button class="btn btn-md btn-outline-light">INSERT</button>
@@ -93,30 +86,26 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="card-box">
-                            <h4 class="header-title mt-4">Daftar master tahun akademik</h4>
+                            <h4 class="header-title mt-4">Daftar master jurusan</h4>
                             <p class="sub-header">
-                                Master tahun akademik sebagai bahan untuk acuan pengelolaaan data lain berdasarkan tahun akademik dan semester yang sedang aktif saat ini. <br class="p-0 m-0">
-                                Anda dapat mengaktifkan tahun akademik untuk melihat data jadwal, struktur dan data lain yang terkait dengan tahun akademik yang aktif. Bukan hanya itu.. <br class="p-0 m-0">
-                                Catatan "jika memulai semester baru, maka buatlah tahun akademik lagi dengan semester yang baru!" data yang baru saja di masukkan akan otomatis aktif.
+                                Master jurusan sebagai bahan untuk acuan pengolaaan jabatan struktur fungsional kepala jurusan serta pemilihan peminatan saat PPDB oleh calon siswa. <br class="m-0 p-0">
+                                Bukan hanya itu, master jurusan juga sebagai acuan pengelompokan data yang berkaitan dengan jurusan baik itu penjadwalan, penilaian, pengelompokan rombel maupun pengelolaan data lainnya.
                             </p>
 
                             <table id="datatable" class="table table-bordered dt-responsive nowrap">
                                 <thead>
                                 <tr>
                                     <th>No.</th>
-                                    <th>Tahun akademik</th>
-                                    <th>semester</th>
-                                    <th>Status</th>
+                                    <th>Kode Jurusan</th>
+                                    <th>Nama Jurusan</th>
                                     <th>Aksi</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>2020/2021</td>
-                                    <td>Genap</td>
-                                    <td>Aktif</td>
-                                    <!-- <td>aktif</td> -->
+                                    <td>TKJ</td>
+                                    <td>TEKNIK KOMPUTER DAN JARINGAN</td>
                                     <td>
                                         <button class="btn btn-secondary width-md box-shadow-dark"><i class="icon-wrench"></i> Ubah</button>
                                         <button class="btn btn-dark width-md box-shadow-dark"><i class="icon-trash"></i> Arsipkan</button>
@@ -124,10 +113,8 @@
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>2020/2021</td>
-                                    <td>Ganjil</td>
-                                    <td>Aktif</td>
-                                    <!-- <td>aktif</td> -->
+                                    <td>APK</td>
+                                    <td>ADMINISTRASI PERKANTORAN</td>
                                     <td>
                                         <button class="btn btn-secondary width-md box-shadow-dark"><i class="icon-wrench"></i> Ubah</button>
                                         <button class="btn btn-dark width-md box-shadow-dark"><i class="icon-trash"></i> Arsipkan</button>
@@ -135,10 +122,8 @@
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>2019/2020</td>
-                                    <td>Genab</td>
-                                    <td>Aktif</td>
-                                    <!-- <td>aktif</td> -->
+                                    <td>RPL</td>
+                                    <td>REKAYASA PERANGKAT LUNAK</td>
                                     <td>
                                         <button class="btn btn-secondary width-md box-shadow-dark"><i class="icon-wrench"></i> Ubah</button>
                                         <button class="btn btn-dark width-md box-shadow-dark"><i class="icon-trash"></i> Arsipkan</button>

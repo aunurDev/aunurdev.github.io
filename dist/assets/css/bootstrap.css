@@ -8813,7 +8813,8 @@ input:focus {
   .box-input-form select {
     -webkit-appearance: none; }
   .box-input-form button {
-    padding: 8px 12px;
+    margin-top: 30px;
+    padding: 7.3px 12px;
     -webkit-transition: .25s;
     transition: .25s; }
     .box-input-form button:hover {
@@ -8821,7 +8822,7 @@ input:focus {
               box-shadow: 0 2.8px 2.2px rgba(67, 212, 244, 0.034), 0 6.7px 5.3px rgba(67, 212, 244, 0.048), 0 12.5px 10px rgba(67, 212, 244, 0.06), 0 22.3px 17.9px rgba(67, 212, 244, 0.072), 0 41.8px 33.4px rgba(67, 212, 244, 0.086); }
 
 .row-select {
-  top: 25%;
+  top: 48%;
   right: 8%; }
 
 .modal-title {

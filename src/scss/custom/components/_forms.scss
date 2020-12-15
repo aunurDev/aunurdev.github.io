@@ -63,7 +63,8 @@ input {
         -webkit-appearance: none;
     }
     button{
-        padding: 8px 12px;
+        margin-top: 30px;
+        padding: 7.3px 12px;
         transition: .25s;
         &:hover{
             box-shadow: $box-shadow-light;
@@ -73,6 +74,6 @@ input {
 
 // row select form
 .row-select{
-    top: 25%;
+    top: 48%;
     right: 8%;
 }
