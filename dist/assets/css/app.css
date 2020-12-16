@@ -682,7 +682,7 @@ body.boxed-layout .container-fluid {
       height: 550px; } }
   .hero p {
     position: absolute;
-    left: 9.5%;
+    left: 10%;
     top: 40%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
@@ -703,10 +703,10 @@ body.boxed-layout .container-fluid {
       .hero .hero-dashboard-img {
         height: 40%; } }
   .hero .hero-img-master {
-    height: 110%;
+    height: 90%;
     position: absolute;
     bottom: 0;
-    right: -8%; }
+    right: -7%; }
     @media (max-width: 768px) {
       .hero .hero-img-master {
         height: 50%; } }
