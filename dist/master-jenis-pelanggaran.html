@@ -261,38 +261,44 @@
                     <div class="page-title-right">
                         <ol class="breadcrumb m-0">
                             <li class="breadcrumb-item"><a href="javascript: void(0);">Master</a></li>
-                            <li class="breadcrumb-item active">Kurikulum</li>
+                            <li class="breadcrumb-item active">Jenis pelanggaran</li>
                         </ol>
                     </div>
-                    <h4 class="page-title">Data master kurikulum</h4>
+                    <h4 class="page-title">Data master jenis pelanggaran</h4>
                 </div> 
                 <!-- end page title -->
 
                 <!-- start content -->
-                <div class="deep-space pt-4 pl-4 hero">
-                    <p class="text-left grey-300 display-4">KURIKULUM 
+                <div class="deep-space pt-4 pl-4 hero-md">
+                    <p class="text-left grey-300 display-4">JENIS PELANGGARAN 
                         <span class="sub-1 d-block py-1">DATA MASTER</span>
-                        <span class="sub-2 d-block font-weight-lighter text-white-50 pt-3 mb-3">Hai Aunur!.. Mari persiapkan tahun pelajaran baru</span>
+                        <span class="sub-2 d-block font-weight-lighter text-white-50 pt-3 mb-3">Hai Aunur!.. Mari persiapkan jenis pelanggaran oleh siswa dan tindak lanjutnya. <br class="p-0 m-0"> 
+                            Penulisan koma pada bilangan pecahan ditulis menggunakan titik [ . ] 
+                        </span>
                     </p>
                     <img class="hero-img-master" src="assets/images/hero/master.png" height="270px" alt="">
-                    <div class="box-input-form position-absolute">
+                    <div class="box-input-form-md position-absolute">
                         <div class="row p-0">
-                            <div class="col-md-5 col-sm-12 p-1">
-                                <!-- <input type="text" class="form-control" placeholder="2020/2021"> -->
-                                <input type="text" class="form-control" placeholder="2020/2021" data-toggle="input-mask" data-mask-format="0000/0000">
-                            </div>
-                            <div class="col-md-5 col-sm-12 p-1 position-relative">
-                                <div class="form-group">
-                                    <select class="form-control">
-                                        <option disabled selected>PILIH SEMESTER</option>
-                                        <option>GANJIL</option>
-                                        <option>GENAP</option>
-                                    </select>
+                            <div class="col-md-10 col-sm-12">
+                                <div class="row p-0">
+                                    <div class="col-md-6 col-sm-12 px-1 py-2">
+                                        <label for="nama-pelanggaran" class="grey-500">Nama pelanggaran</label>
+                                        <input name="nama-pelanggaran" type="text" class="form-control" placeholder="Merokok">
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 px-1 py-2">
+                                        <label for="poin-pelanggaran" class="grey-500">Poin pelanggaran</label>
+                                        <input name="poin-pelanggaran" type="number" class="form-control" placeholder="9.8">
+                                    </div>
+                                    <div class="col-md-12 px-1">
+                                        <div class="form-group">
+                                            <label for="deskripsi-pelanggaran" class="grey-500">Tindak lanjut pelanggaran</label>
+                                            <textarea class="form-control" name="deskripsi-pelanggaran" rows="4" placeholder="Denda Rp.50.000, dicukur gundul dan pemanggilan walimurid"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 px-1">
+                                        <button class="btn btn-md btn-outline-light btn-block">INSERT</button>
+                                    </div>
                                 </div>
-                                <span class="position-absolute row-select"><i class="icon-arrow-down"></i></span>
-                            </div>
-                            <div class="col-md-2 col-sm-12 p-1">
-                                <button class="btn btn-md btn-outline-light">INSERT</button>
                             </div>
                         </div>
                     </div>
@@ -301,50 +307,57 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="card-box">
-                            <h4 class="header-title mt-4">Daftar master tahun akademik</h4>
+                            <h4 class="header-title mt-4">Daftar master jenis pelanggaran</h4>
                             <p class="sub-header">
-                                Master tahun akademik sebagai sebagai bahan untuk acuan pengelolaan data lain berdasarkan tahun akademik dan semester yang sedang aktif saat ini.
+                                Master jenis pelanggaran sebagai bahan untuk acuan pengelolaan pelanggaran siswa, dan acuan tindakan yang harus dilakukan guru.
                             </p>
 
                             <table id="datatable" class="table table-bordered dt-responsive nowrap">
                                 <thead>
-                                <tr>
+                                <tr class="text-center">
                                     <th>No.</th>
-                                    <th>Tahun akademik</th>
-                                    <th>semester</th>
-                                    <th>Status</th>
+                                    <th>Nama pelanggaran</th>
+                                    <th>Poin pelanggaran</th>
+                                    <th>Tindak lanjut</th>
                                     <th>Aksi</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>1</td>
-                                    <td>2020/2021</td>
-                                    <td>Genap</td>
-                                    <td>Aktif</td>
-                                    <!-- <td>aktif</td> -->
+                                    <td class="align-middle">1</td>
+                                    <td class="align-middle">Membolos</td>
+                                    <td class="text-center align-middle">3</td>
+                                    <td class="text-wrap align-middle">Berdiri dilapangan selama 2 jam</td>
                                     <td>
                                         <button class="btn btn-secondary width-md box-shadow-dark"><i class="icon-wrench"></i> Ubah</button>
                                         <button class="btn btn-dark width-md box-shadow-dark"><i class="icon-trash"></i> Arsipkan</button>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>2</td>
-                                    <td>2020/2021</td>
-                                    <td>Ganjil</td>
-                                    <td>Aktif</td>
-                                    <!-- <td>aktif</td> -->
+                                    <td class="align-middle">2</td>
+                                    <td class="align-middle">Atribut tidak lengkap saat upacara</td>
+                                    <td class="text-center align-middle">0.5</td>
+                                    <td class="text-wrap align-middle">Berdiri didepan</td>
                                     <td>
                                         <button class="btn btn-secondary width-md box-shadow-dark"><i class="icon-wrench"></i> Ubah</button>
                                         <button class="btn btn-dark width-md box-shadow-dark"><i class="icon-trash"></i> Arsipkan</button>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>3</td>
-                                    <td>2019/2020</td>
-                                    <td>Genab</td>
-                                    <td>Aktif</td>
-                                    <!-- <td>aktif</td> -->
+                                    <td class="align-middle">3</td>
+                                    <td class="align-middle">Berkelahi</td>
+                                    <td class="text-center align-middle">5</td>
+                                    <td class="text-wrap align-middle">berlari mengelilingi lapangan 20 x, surat panggilan orang tua, Skors 2 hari</td>
+                                    <td>
+                                        <button class="btn btn-secondary width-md box-shadow-dark"><i class="icon-wrench"></i> Ubah</button>
+                                        <button class="btn btn-dark width-md box-shadow-dark"><i class="icon-trash"></i> Arsipkan</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="align-middle">3</td>
+                                    <td class="align-middle">Pelecehan seksual</td>
+                                    <td class="text-center align-middle">9</td>
+                                    <td class="text-wrap align-middle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, facere. Labore sed tempora non ipsam officia distinctio, aspernatur, repellendus ad voluptatibus corporis explicabo, voluptatem quae voluptatum at commodi suscipit? Exercitationem.</td>
                                     <td>
                                         <button class="btn btn-secondary width-md box-shadow-dark"><i class="icon-wrench"></i> Ubah</button>
                                         <button class="btn btn-dark width-md box-shadow-dark"><i class="icon-trash"></i> Arsipkan</button>

@@ -42,3 +42,36 @@
         }
     }
 }
+.hero-md{
+    position: relative;
+    height: 570px;
+    border-radius: 5px;
+    @media(max-width:768px){
+        height: 550px;
+    }
+    p{
+        position: absolute;
+        left: 10%;
+        top: 23%;
+        transform: translateY(-50%);
+        @media(max-width:768px){
+            top: 30%;
+            font-size: 40px !important;
+        }
+        .sub-1{
+            font-size: 30px;
+        }
+        .sub-2{
+            font-size: 18px;
+        }
+    }
+    .hero-img-master{
+        height: 70%;
+        position: absolute;
+        bottom: 0;
+        right: -7%;
+        @media(max-width:768px){
+            height: 50%;
+        }
+    }
+}

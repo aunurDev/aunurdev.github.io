@@ -711,6 +711,36 @@ body.boxed-layout .container-fluid {
       .hero .hero-img-master {
         height: 50%; } }
 
+.hero-md {
+  position: relative;
+  height: 570px;
+  border-radius: 5px; }
+  @media (max-width: 768px) {
+    .hero-md {
+      height: 550px; } }
+  .hero-md p {
+    position: absolute;
+    left: 10%;
+    top: 23%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+    @media (max-width: 768px) {
+      .hero-md p {
+        top: 30%;
+        font-size: 40px !important; } }
+    .hero-md p .sub-1 {
+      font-size: 30px; }
+    .hero-md p .sub-2 {
+      font-size: 18px; }
+  .hero-md .hero-img-master {
+    height: 70%;
+    position: absolute;
+    bottom: 0;
+    right: -7%; }
+    @media (max-width: 768px) {
+      .hero-md .hero-img-master {
+        height: 50%; } }
+
 .grey-100 {
   color: #f1f5f7; }
 
