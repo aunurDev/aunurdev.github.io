@@ -96,9 +96,49 @@ input {
         }
     }
 }
+.box-input-form-lg{
+    width: 50%;
+    border: none;
+    left: 10%;
+    height: 20%;
+    top: 30%;
+    @media(max-width:768px){
+        bottom: 35%;
+        input,select,button{
+            margin-top: 10px;
+            width: 100%;
+        }
+    }
+    select{
+        -webkit-appearance: none;
+    }
+    button{
+        margin-top: 10px;
+        padding: 7.3px 12px;
+        transition: .25s;
+        &:hover{
+            box-shadow: $box-shadow-light;
+        }
+    }
+}
+
 
 // row select form
 .row-select{
     top: 48%;
     right: 8%;
+}
+
+.select-box{
+    position: relative;
+    select{
+        -webkit-appearance: none;
+        border-radius: 5px;
+    }
+    .row-select{
+        font-size: 12px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }

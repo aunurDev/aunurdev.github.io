@@ -9,11 +9,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <!-- App favicon -->
         <link rel="shortcut icon" href="assets/images/favicon.ico">
-
+        
         <!-- DataTables -->
         <link href="assets/libs/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css"/>
         <link href="assets/libs/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css"/>        
-
+        
         <!-- jvectormap -->
         <link href="assets/libs/jqvmap/jqvmap.min.css" rel="stylesheet" />
 
@@ -254,32 +254,71 @@
                     <div class="page-title-right">
                         <ol class="breadcrumb m-0">
                             <li class="breadcrumb-item"><a href="javascript: void(0);">Master</a></li>
-                            <li class="breadcrumb-item active">Jurusan</li>
+                            <li class="breadcrumb-item active">Jenis bantuan</li>
                         </ol>
                     </div>
-                    <h4 class="page-title">Data master jurusan</h4>
+                    <h4 class="page-title">Data master jenis bantuan</h4>
                 </div> 
                 <!-- end page title -->
 
                 <!-- start content -->
-                <div class="deep-space pt-4 pl-4 hero">
-                    <p class="text-left grey-300 display-4">JURUSAN
+                <div class="deep-space pl-4 hero-lg">
+                    <p class="text-left grey-300 display-4">JENIS BANTUAN 
                         <span class="sub-1 d-block py-1">DATA MASTER</span>
-                        <span class="sub-2 d-block font-weight-lighter text-white-50 pt-2 mb-4">Hai Aunur!.. Mari persiapkan jurusan baru</span>
+                        <span class="sub-2 d-block font-weight-lighter text-white-50 pt-3">Hai Aunur!.. Mari persiapkan jenis bantuan bagi siswa.
+                        </span>
                     </p>
                     <img class="hero-img-master" src="assets/images/hero/master.png" height="270px" alt="">
-                    <div class="box-input-form position-absolute">
+                    <div class="box-input-form-lg position-absolute">
                         <div class="row p-0">
-                            <div class="col-md-5 col-sm-12 p-1">
-                                <label for="kode-jurusan" class="grey-500">Kode jurusan</label>
-                                <input name="kode-jurusan" type="text" class="form-control" placeholder="TKJ">
-                            </div>
-                            <div class="col-md-5 col-sm-12 p-1">
-                                <label for="nama-jurusan" class="grey-500">Nama jurusan</label>
-                                <input name="nama-jurusan" type="text" class="form-control" placeholder="TEKNIK KOMPUTER DAN JARINGAN">
-                            </div>
-                            <div class="col-md-2 col-sm-12 p-1">
-                                <button class="btn btn-md btn-outline-light">INSERT</button>
+                            <div class="col-md-10 col-sm-12">
+                                <div class="row p-0">
+                                    <div class="col-md-6 col-sm-12 px-1 py-1">
+                                        <label for="nama-bantuan" class="grey-500">Nama bantuan</label>
+                                        <input name="nama-bantuan" type="text" class="form-control" placeholder="Beasiswa prestasi">
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 px-1 py-1">
+                                        <div class="form-group">
+                                            <label for="jenis-bantuan" class="grey-500">Jenis bantuan</label>
+                                            <select name="jenis-bantuan" class="form-control">
+                                                <option>Pengurangan jenis biaya</option>
+                                                <option selected>Peniadaan jenis biaya</option>
+                                                <option>Nominal</option>
+                                                <option>Benda</option>
+                                            </select>
+                                        </div>
+                                        <span class="position-absolute row-select"><i class="icon-arrow-down"></i></span>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 px-1 py-1">
+                                        <div class="form-group">
+                                            <label for="jenis-biaya" class="grey-500">Jenis biaya</label>
+                                            <select name="jenis-biaya" class="form-control">
+                                                <option>PPDB</option>
+                                                <option>Uang gedung</option>
+                                                <option selected>SPP</option>
+                                                <option>Seragam</option>
+                                            </select>
+                                        </div>
+                                        <span class="position-absolute row-select"><i class="icon-arrow-down"></i></span>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 px-1 py-1">
+                                        <label for="nominal-bantuan" class="grey-500">Nominal</label>
+                                        <input name="nominal-bantuan" type="number" class="form-control" placeholder="disbled" disabled>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 px-1 py-1">
+                                        <label for="nama-benda" class="grey-500">Nama benda</label>
+                                        <input name="nama-benda" type="text" class="form-control" placeholder="disbled" disabled>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 px-1 py-1">
+                                        <div class="form-group">
+                                            <label for="deskripsi-bantuan" class="grey-500">Deskripsi bantuan</label>
+                                            <textarea class="form-control" name="deskripsi-bantuan" rows="4" placeholder="Penerima beasiswa prestasi adalah siswa yang mempunyai rangking pertama dari tiap rombel."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 px-1 py-1">
+                                        <button class="btn btn-md btn-outline-light btn-block">TAMBAHKAN</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -288,50 +327,181 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="card-box">
-                            <h4 class="header-title mt-4">Daftar master jurusan</h4>
+                            <h4 class="header-title mt-4">Daftar master jenis bantuan</h4>
                             <p class="sub-header">
-                                Master jurusan sebagai bahan untuk acuan pengolaaan jabatan struktur fungsional kepala jurusan serta pemilihan peminatan saat PPDB oleh calon siswa. <br class="m-0 p-0">
-                                Bukan hanya itu, master jurusan juga sebagai acuan pengelompokan data yang berkaitan dengan jurusan baik itu penjadwalan, penilaian, pengelompokan rombel maupun pengelolaan data lainnya.
+                                Master jenis bantuan siswa sebagai acuan pengelolaan bantuan yang akan dialokasikan kepada siswa. <br class="p-0 m-0">
                             </p>
 
                             <table id="datatable" class="table table-bordered dt-responsive nowrap">
                                 <thead>
                                 <tr class="text-center">
                                     <th>No.</th>
-                                    <th>Kode Jurusan</th>
-                                    <th>Nama Jurusan</th>
+                                    <th>Nama bantuan</th>
+                                    <th>Jenis bantuan</th>
+                                    <th>biaya dimaksudkan</th>
+                                    <th>Nominal</th>
+                                    <th>Benda</th>
+                                    <th>Deskripsi bantuan</th>
                                     <th>Aksi</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>1</td>
-                                    <td class="text-center">TKJ</td>
-                                    <td>TEKNIK KOMPUTER DAN JARINGAN</td>
+                                    <td class="align-middle">1</td>
+                                    <td class="align-middle">Donasi pt.kurnia jaya</td>
+                                    <td class="align-middle">Benda</td>
+                                    <td class="align-middle">-</td>
+                                    <td class="align-middle">-</td>
+                                    <td class="align-middle">Buku paket analisa pangsa pasar</td>
+                                    <td class="align-middle text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dolorem? Esse vel eligendi quam quidem iste nostrum magnam maiores optio!</td>
                                     <td>
                                         <button class="btn btn-secondary width-md box-shadow-dark"><i class="icon-wrench"></i> Ubah</button>
                                         <button class="btn btn-dark width-md box-shadow-dark"><i class="icon-trash"></i> Arsipkan</button>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>2</td>
-                                    <td class="text-center">APK</td>
-                                    <td>ADMINISTRASI PERKANTORAN</td>
+                                    <td class="align-middle">2</td>
+                                    <td class="align-middle">Biasiswa tidak mampu</td>
+                                    <td class="align-middle">Peniadaan jenis biaya</td>
+                                    <td class="align-middle">Uang gedung, SPP, Seragam</td>
+                                    <td class="align-middle">-</td>
+                                    <td class="align-middle">-</td>
+                                    <td class="align-middle text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dolorem? Esse vel eligendi quam quidem iste nostrum magnam maiores optio!</td>
                                     <td>
                                         <button class="btn btn-secondary width-md box-shadow-dark"><i class="icon-wrench"></i> Ubah</button>
                                         <button class="btn btn-dark width-md box-shadow-dark"><i class="icon-trash"></i> Arsipkan</button>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>3</td>
-                                    <td class="text-center">RPL</td>
-                                    <td>REKAYASA PERANGKAT LUNAK</td>
+                                    <td class="align-middle">3</td>
+                                    <td class="align-middle">Donasi pt.kurnia jaya</td>
+                                    <td class="align-middle">Benda</td>
+                                    <td class="align-middle">-</td>
+                                    <td class="align-middle">-</td>
+                                    <td class="align-middle">Buku paket analisa pangsa pasar</td>
+                                    <td class="align-middle text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dolorem? Esse vel eligendi quam quidem iste nostrum magnam maiores optio!</td>
                                     <td>
                                         <button class="btn btn-secondary width-md box-shadow-dark"><i class="icon-wrench"></i> Ubah</button>
                                         <button class="btn btn-dark width-md box-shadow-dark"><i class="icon-trash"></i> Arsipkan</button>
                                     </td>
                                 </tr>
-                                
+                                <tr>
+                                    <td class="align-middle">3</td>
+                                    <td class="align-middle">Donasi pt.kurnia jaya</td>
+                                    <td class="align-middle">Benda</td>
+                                    <td class="align-middle">-</td>
+                                    <td class="align-middle">-</td>
+                                    <td class="align-middle">Buku paket analisa pangsa pasar</td>
+                                    <td class="align-middle text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dolorem? Esse vel eligendi quam quidem iste nostrum magnam maiores optio!</td>
+                                    <td>
+                                        <button class="btn btn-secondary width-md box-shadow-dark"><i class="icon-wrench"></i> Ubah</button>
+                                        <button class="btn btn-dark width-md box-shadow-dark"><i class="icon-trash"></i> Arsipkan</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="align-middle">3</td>
+                                    <td class="align-middle">Donasi pt.kurnia jaya</td>
+                                    <td class="align-middle">Benda</td>
+                                    <td class="align-middle">-</td>
+                                    <td class="align-middle">-</td>
+                                    <td class="align-middle">Buku paket analisa pangsa pasar</td>
+                                    <td class="align-middle text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dolorem? Esse vel eligendi quam quidem iste nostrum magnam maiores optio!</td>
+                                    <td>
+                                        <button class="btn btn-secondary width-md box-shadow-dark"><i class="icon-wrench"></i> Ubah</button>
+                                        <button class="btn btn-dark width-md box-shadow-dark"><i class="icon-trash"></i> Arsipkan</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="align-middle">3</td>
+                                    <td class="align-middle">Donasi pt.kurnia jaya</td>
+                                    <td class="align-middle">Benda</td>
+                                    <td class="align-middle">-</td>
+                                    <td class="align-middle">-</td>
+                                    <td class="align-middle">Buku paket analisa pangsa pasar</td>
+                                    <td class="align-middle text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dolorem? Esse vel eligendi quam quidem iste nostrum magnam maiores optio!</td>
+                                    <td>
+                                        <button class="btn btn-secondary width-md box-shadow-dark"><i class="icon-wrench"></i> Ubah</button>
+                                        <button class="btn btn-dark width-md box-shadow-dark"><i class="icon-trash"></i> Arsipkan</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="align-middle">3</td>
+                                    <td class="align-middle">Donasi pt.kurnia jaya</td>
+                                    <td class="align-middle">Benda</td>
+                                    <td class="align-middle">-</td>
+                                    <td class="align-middle">-</td>
+                                    <td class="align-middle">Buku paket analisa pangsa pasar</td>
+                                    <td class="align-middle text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dolorem? Esse vel eligendi quam quidem iste nostrum magnam maiores optio!</td>
+                                    <td>
+                                        <button class="btn btn-secondary width-md box-shadow-dark"><i class="icon-wrench"></i> Ubah</button>
+                                        <button class="btn btn-dark width-md box-shadow-dark"><i class="icon-trash"></i> Arsipkan</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="align-middle">3</td>
+                                    <td class="align-middle">Donasi pt.kurnia jaya</td>
+                                    <td class="align-middle">Benda</td>
+                                    <td class="align-middle">-</td>
+                                    <td class="align-middle">-</td>
+                                    <td class="align-middle">Buku paket analisa pangsa pasar</td>
+                                    <td class="align-middle text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dolorem? Esse vel eligendi quam quidem iste nostrum magnam maiores optio!</td>
+                                    <td>
+                                        <button class="btn btn-secondary width-md box-shadow-dark"><i class="icon-wrench"></i> Ubah</button>
+                                        <button class="btn btn-dark width-md box-shadow-dark"><i class="icon-trash"></i> Arsipkan</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="align-middle">3</td>
+                                    <td class="align-middle">Donasi pt.kurnia jaya</td>
+                                    <td class="align-middle">Benda</td>
+                                    <td class="align-middle">-</td>
+                                    <td class="align-middle">-</td>
+                                    <td class="align-middle">Buku paket analisa pangsa pasar</td>
+                                    <td class="align-middle text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dolorem? Esse vel eligendi quam quidem iste nostrum magnam maiores optio!</td>
+                                    <td>
+                                        <button class="btn btn-secondary width-md box-shadow-dark"><i class="icon-wrench"></i> Ubah</button>
+                                        <button class="btn btn-dark width-md box-shadow-dark"><i class="icon-trash"></i> Arsipkan</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="align-middle">3</td>
+                                    <td class="align-middle">Donasi pt.kurnia jaya</td>
+                                    <td class="align-middle">Benda</td>
+                                    <td class="align-middle">-</td>
+                                    <td class="align-middle">-</td>
+                                    <td class="align-middle">Buku paket analisa pangsa pasar</td>
+                                    <td class="align-middle text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dolorem? Esse vel eligendi quam quidem iste nostrum magnam maiores optio!</td>
+                                    <td>
+                                        <button class="btn btn-secondary width-md box-shadow-dark"><i class="icon-wrench"></i> Ubah</button>
+                                        <button class="btn btn-dark width-md box-shadow-dark"><i class="icon-trash"></i> Arsipkan</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="align-middle">3</td>
+                                    <td class="align-middle">Donasi pt.kurnia jaya</td>
+                                    <td class="align-middle">Benda</td>
+                                    <td class="align-middle">-</td>
+                                    <td class="align-middle">-</td>
+                                    <td class="align-middle">Buku paket analisa pangsa pasar</td>
+                                    <td class="align-middle text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dolorem? Esse vel eligendi quam quidem iste nostrum magnam maiores optio!</td>
+                                    <td>
+                                        <button class="btn btn-secondary width-md box-shadow-dark"><i class="icon-wrench"></i> Ubah</button>
+                                        <button class="btn btn-dark width-md box-shadow-dark"><i class="icon-trash"></i> Arsipkan</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="align-middle">3</td>
+                                    <td class="align-middle">Donasi pt.kurnia jaya</td>
+                                    <td class="align-middle">Benda</td>
+                                    <td class="align-middle">-</td>
+                                    <td class="align-middle">-</td>
+                                    <td class="align-middle">Buku paket analisa pangsa pasar</td>
+                                    <td class="align-middle text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dolorem? Esse vel eligendi quam quidem iste nostrum magnam maiores optio!</td>
+                                    <td>
+                                        <button class="btn btn-secondary width-md box-shadow-dark"><i class="icon-wrench"></i> Ubah</button>
+                                        <button class="btn btn-dark width-md box-shadow-dark"><i class="icon-trash"></i> Arsipkan</button>
+                                    </td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div> <!-- end card-box -->
@@ -379,12 +549,8 @@
         <script src="assets/libs/datatables/dataTables.keyTable.min.js"></script>
         <script src="assets/libs/datatables/dataTables.select.min.js"></script>
 
-        <!-- Datatables init -->
-        <script src="assets/js/pages/datatables.init.js"></script> 
-
         <!-- select2 js -->
         <script src="assets/libs/select2/select2.min.js"></script>
-        <script src="assets/libs/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
         <script src="assets/libs/switchery/switchery.min.js"></script>
         <script src="assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
         <!-- Mask input -->
@@ -393,6 +559,9 @@
         <script src="assets/libs/bootstrap-select/bootstrap-select.min.js"></script>
 
         <script src="assets/libs/moment/moment.min.js"></script>
+
+        <!-- Datatables init -->
+        <script src="assets/js/pages/datatables.init.js"></script> 
         
         <!-- Init js-->
         <script src="assets/js/pages/form-advanced.init.js"></script>        
@@ -401,8 +570,3 @@
         <script src="assets/js/app.min.js"></script>
     </body>
 </html>
-
-
-
-
-
